@@ -3,38 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Sayfa</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Evlilik Yaşının Yükselmesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .recent-posts .post-summary, .post-content {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .recent-posts .post-summary h2, .post-content h2 {
+            margin-top: 0;
+        }
+
+        .recent-posts .post-summary p, .post-content p {
+            color: #666;
+        }
+
+        .recent-posts .post-summary img, .post-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Blog Sitesi Başlığı</h1>
+        <h1>Evlilik Yaşının Yükselmesi</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="post.html">Blog Gönderisi</a></li>
+                <li><a href="#index">Ana Sayfa</a></li>
+                <li><a href="#post">Blog Gönderisi</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="post">
-            <article>
-                <h2>Blog Gönderisi Başlığı</h2>
-                <p>Blog gönderisi özeti...</p>
-                <a href="post.html">Devamını Oku</a>
+    <!-- Ana Sayfa -->
+    <main id="index">
+        <section class="recent-posts">
+            <article class="post-summary">
+                <h2><a href="#post">Evlilik Yaşının Artış Nedenleri</a></h2>
+                <p>Bu yazıda evlilik yaşının neden yükseldiğini inceleyeceğiz. Daha fazlası için başlığa tıklayın.</p>
+                <img src="https://tv5comtr.teimg.com/crop/1280x720/tv5-com-tr/uploads/2023/05/tasarimsu-90-2.png" alt="Marriage Image">
             </article>
-
-            <article>
-                <h2>Diğer Blog Gönderisi Başlığı</h2>
-                <p>Diğer blog gönderisi özeti...</p>
-                <a href="post.html">Devamını Oku</a>
+            <article class="post-summary">
+                <h2><a href="#post">Geç Evliliğin Toplumsal Etkileri</a></h2>
+                <p>Geç evliliklerin toplum üzerindeki etkilerini tartışıyoruz. Detaylı bilgi için başlığa tıklayın.</p>
+                <img src="https://previews.123rf.com/images/mix3r/mix3r1811/mix3r181100171/112672800-flat-illustration-of-society-members-with-a-large-group-of-men-and-women.jpg" alt="Society Image">
             </article>
         </section>
     </main>
 
+    <!-- Blog Gönderisi Sayfası -->
+    <main id="post">
+        <article class="post-content">
+            <h2>Evlilik Yaşının Artış Nedenleri</h2>
+            <img src="https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1116000/1117458.jpg" alt="Age Increase Image">
+            <p>Günümüzde evlilik yaşı birçok faktörden dolayı yükselmekte. Bu faktörler arasında kariyer hedefleri, ekonomik koşullar ve kişisel tercihler bulunmaktadır.</p>
+            <p>Özellikle kariyer hedeflerine ulaşmak isteyen bireyler, evliliği ertelemeyi tercih etmektedir. Ekonomik belirsizlikler ve yüksek yaşam maliyetleri de geç evliliğe katkıda bulunur.</p>
+            <p>Bunun yanında, modern yaşam tarzının getirdiği değişimler ve bireysel özgürlüğün önemi de evlilik yaşını etkileyen diğer önemli faktörlerdendir.</p>
+        </article>
+    </main>
+
     <footer>
-        <p>&copy; 2023 Blog Sitesi. Tüm hakları saklıdır.</p>
+        <p>&copy; 2024 Blog Sitesi. Page Made For [Ödev Veren Kişinin İsmi] Assignment</p>
     </footer>
 </body>
 </html>
