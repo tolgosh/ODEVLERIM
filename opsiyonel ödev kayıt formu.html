@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anket Formu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">Anket Formu</h1>
+    </header>
+
+    <main>
+        <p id="description">Lütfen aşağıdaki formu doldurunuz.</p>
+
+        <form id="survey-form">
+            <label id="name-label" for="name">İsim:</label>
+            <input type="text" id="name" name="name" placeholder="İsminizi giriniz" required>
+
+            <label id="email-label" for="email">E-posta:</label>
+            <input type="email" id="email" name="email" placeholder="E-posta adresinizi giriniz" required>
+
+            <label id="number-label" for="number">Yaş:</label>
+            <input type="number" id="number" name="age" min="1" max="120" placeholder="Yaşınızı giriniz" required>
+
+            <label for="dropdown">Cinsiyet:</label>
+            <select id="dropdown" name="gender">
+                <option value="male">Erkek</option>
+                <option value="female">Kadın</option>
+                <option value="other">Diğer</option>
+            </select>
+
+            <p>Anketi nasıl buldunuz?</p>
+            <label><input type="radio" name="rating" value="excellent"> Mükemmel</label>
+            <label><input type="radio" name="rating" value="good"> İyi</label>
+            <label><input type="radio" name="rating" value="average"> Ortalama</label>
+            <label><input type="radio" name="rating" value="poor"> Kötü</label>
+
+            <p>İlgi Alanlarınız:</p>
+            <label><input type="checkbox" name="interest" value="sports"> Spor</label>
+            <label><input type="checkbox" name="interest" value="music"> Müzik</label>
+            <label><input type="checkbox" name="interest" value="reading"> Okuma</label>
+
+            <label for="comments">Ek Yorumlar:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Yorumlarınızı buraya giriniz"></textarea>
+
+            <input type="submit" id="submit" value="Gönder">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anket Formu. Page Made For [Ödev Veren Kişinin İsmi] Assignment</p>
+    </footer>
+</body>
+</html>
