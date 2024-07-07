@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Klonu</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .story-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 10px;
+      border: 2px solid #ff4500;
+    }
+    .post-image {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .post {
+      margin-bottom: 20px;
+    }
+    .nav-item.active .nav-link {
+      font-weight: bold;
+    }
+    .post-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Instagram</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Ana Sayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Keşfet</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Profil Başlığı -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="Profil Resmi" class="profile-pic">
+      </div>
+      <div class="col-md-8">
+        <h2>Tolgahan Akgüç</h2>
+        <p>@buaradatolgaben</p>
+        <div class="d-flex justify-content-between w-50">
+          <div>
+            <strong>150</strong>
+            <p>Gönderi</p>
+          </div>
+          <div>
+            <strong>300</strong>
+            <p>Takipçi</p>
+          </div>
+          <div>
+            <strong>180</strong>
+            <p>Takip Edilen</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hikayeler -->
+  <div class="container mt-4">
+    <div class="d-flex justify-content-start">
+      <img src="https://i.pinimg.com/originals/4b/37/6e/4b376e93c30a5ff83a3043b3479d5f88.jpg" alt="Hikaye 1" class="story-pic">
+      <img src="https://i.pinimg.com/200x150/dd/7f/e6/dd7fe62ee2c21ed65b32f08c57bf7704.jpg" alt="Hikaye 2" class="story-pic">
+      <img src="https://i.pinimg.com/170x/b7/4d/b8/b74db8db4af20d1ad6ac30dd4af827e9.jpg" alt="Hikaye 3" class="story-pic">
+      <img src="https://i.pinimg.com/236x/2c/26/38/2c26385038c35d71eb537384b25b3487.jpg" alt="Hikaye 4" class="story-pic">
+      <img src="https://teloji.com/wp-content/uploads/2022/05/instagram-story-kapaklari-gul-300x300.jpg" alt="Hikaye 5" class="story-pic">
+    </div>
+  </div>
+
+  <!-- Gönderiler -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4 post">
+        <div class="post-header">
+          <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="buaradatolgaben">
+          <span>buaradatolgaben</span>
+        </div>
+        <img src="https://marketplace.canva.com/EAFHhdpY79w/1/0/1600w/canva-beyaz-minimalist-g%C3%BCnayd%C4%B1n-i%CC%87nstagram-g%C3%B6nderisi-z0XwSEER22s.jpg" alt="Gönderi 1" class="post-image">
+        <div class="post-actions mt-2">
+          <button class="btn btn-outline-primary btn-sm">Beğen</button>
+          <button class="btn btn-outline-secondary btn-sm">Yorum Yap</button>
+        </div>
+      </div>
+      <div class="col-md-4 post">
+        <div class="post-header">
+          <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="buaradatolgaben">
+          <span>buaradatolgaben</span>
+        </div>
+        <img src="https://marketplace.canva.com/EAFby7UEZas/1/0/1600w/canva-sar%C4%B1-basit-k%C4%B1sa-metin-ve-kelime-a%C3%A7%C4%B1klamas%C4%B1-instagram-g%C3%B6nderisi-eQXmHL70xIg.jpg" alt="Gönderi 2" class="post-image">
+        <div class="post-actions mt-2">
+          <button class="btn btn-outline-primary btn-sm">Beğen</button>
+          <button class="btn btn-outline-secondary btn-sm">Yorum Yap</button>
+        </div>
+      </div>
+      <div class="col-md-4 post">
+        <div class="post-header">
+          <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="buaradatolgaben">
+          <span>buaradatolgaben</span>
+        </div>
+        <img src="https://marketplace.canva.com/EAFFBVh679A/1/0/1600w/canva-sar%C4%B1-ve-beyaz-sade-d%C3%BCz-arka-plan-pozitif-olumlu-instagram-g%C3%B6nderisi-W6TslqacgJY.jpg" alt="Gönderi 3" class="post-image">
+        <div class="post-actions mt-2">
+          <button class="btn btn-outline-primary btn-sm">Beğen</button>
+          <button class="btn btn-outline-secondary btn-sm">Yorum Yap</button>
+        </div>
+      </div>
+      <div class="col-md-4 post">
+        <div class="post-header">
+          <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="buaradatolgaben">
+          <span>buaradatolgaben</span>
+        </div>
+        <img src="https://marketplace.canva.com/EAFDmjwe9Eg/1/0/1600w/canva-ye%C5%9Fil-sade-kare-motivasyon-s%C3%B6z%C3%BC-instagram-g%C3%B6nderisi-8FgcLuxtKFw.jpg" alt="Gönderi 4" class="post-image">
+        <div class="post-actions mt-2">
+          <button class="btn btn-outline-primary btn-sm">Beğen</button>
+          <button class="btn btn-outline-secondary btn-sm">Yorum Yap</button>
+        </div>
+      </div>
+      <div class="col-md-4 post">
+        <div class="post-header">
+          <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="buaradatolgaben">
+          <span>buaradatolgaben</span>
+        </div>
+        <img src="https://marketplace.canva.com/EAFDd9QePWg/2/0/400w/canva-instagram-g%C3%B6nderisi-OVQYK0kWSRQ.jpg" alt="Gönderi 5" class="post-image">
+        <div class="post-actions mt-2">
+          <button class="btn btn-outline-primary btn-sm">Beğen</button>
+          <button class="btn btn-outline-secondary btn-sm">Yorum Yap</button>
+        </div>
+      </div>
+      <div class="col-md-4 post">
+        <div class="post-header">
+          <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="buaradatolgaben">
+          <span>buaradatolgaben</span>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRL5B3bTzB03PxDJHGmjVXhwIfl3ay8bLVacI5g-QmzPofBPY0ZS6K63hb19goIa6t8EE&usqp=CAU" alt="Gönderi 6" class="post-image">
+        <div class="post-actions mt-2">
+          <button class="btn btn-outline-primary btn-sm">Beğen</button>
+          <button class="btn btn-outline-secondary btn-sm">Yorum Yap</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
