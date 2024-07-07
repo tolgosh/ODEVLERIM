@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Klonu - Anasayfa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #fafafa; /* Instagram'ın arka plan rengi */
+      padding-top: 54px; /* Navbar yüksekliği */
+    }
+
+    .navbar {
+      height: 54px;
+      background-color: white;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      margin-left: 192px;
+    }
+
+    .search-bar input::placeholder {
+      background: url('assets/search-icon.png') no-repeat center;
+      background-size: 20px 20px;
+      padding-left: 25px;
+    }
+
+    .menu {
+      display: none;
+      margin-left: 5px;
+      margin-top: 2px;
+    }
+
+    @media (min-width: 576px) {
+      .menu {
+        display: flex;
+      }
+    }
+
+    .story-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 10px;
+      border: 2px solid #ff4500;
+    }
+
+    .post-image {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .post {
+      margin-bottom: 20px;
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+    }
+
+    .nav-item.active .nav-link {
+      font-weight: bold;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #dbdbdb;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .card-header,
+    .card-footer {
+      background-color: white;
+    }
+
+    .comment-share {
+      text-align: right;
+      padding: 10px;
+    }
+
+    .view-all,
+    .follow {
+      text-align: right;
+      cursor: pointer;
+      color: #0095f6;
+    }
+
+    .stickysidebar {
+      position: -webkit-sticky; /* For Safari */
+      position: sticky;
+      top: 54px; /* Navbar yüksekliği */
+    }
+
+    .middlearea {
+      max-height: 200px !important;
+    }
+
+    .offset-md-4 {
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 576px) {
+      .middlearea {
+        col: 6;
+      }
+    }
+
+    .rightpanel {
+      background-color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 3px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-pic {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+
+    .text-muted {
+      color: #8e8e8e !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top">
+    <div class="container d-flex align-items-center">
+      <div class="logo">
+        <a href="#"><img src="https://i.pinimg.com/originals/8f/8f/b4/8f8fb43ce828a22c91c0b59f55fb91b3.png" alt="Logo" style="height: 40px;"></a>
+      </div>
+      <div class="search-bar d-flex flex-grow-1">
+        <input type="text" placeholder="Ara" class="form-control ml-3">
+      </div>
+      <div class="menu ml-auto">
+        <i class="fas fa-home fa-lg mx-2"></i>
+        <i class="fas fa-paper-plane fa-lg mx-2"></i>
+        <i class="fas fa-compass fa-lg mx-2"></i>
+        <i class="fas fa-heart fa-lg mx-2"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Stories -->
+  <div class="container mt-5 pt-3">
+    <div class="d-flex justify-content-start">
+      <div class="story">
+        <img src="https://i.pinimg.com/originals/4b/37/6e/4b376e93c30a5ff83a3043b3479d5f88.jpg" alt="Hikaye 1" class="story-pic">
+        <p class="text-center">Hikaye 1</p>
+      </div>
+      <div class="story">
+        <img src="https://i.pinimg.com/200x150/dd/7f/e6/dd7fe62ee2c21ed65b32f08c57bf7704.jpg" alt="Hikaye 2" class="story-pic">
+        <p class="text-center">Hikaye 2</p>
+      </div>
+      <div class="story">
+        <img src="https://i.pinimg.com/170x/b7/4d/b8/b74db8db4af20d1ad6ac30dd4af827e9.jpg" alt="Hikaye 3" class="story-pic">
+        <p class="text-center">Hikaye 3</p>
+      </div>
+      <div class="story">
+        <img src="https://i.pinimg.com/236x/2c/26/38/2c26385038c35d71eb537384b25b3487.jpg" alt="Hikaye 4" class="story-pic">
+        <p class="text-center">Hikaye 4</p>
+      </div>
+      <div class="story">
+        <img src="https://teloji.com/wp-content/uploads/2022/05/instagram-story-kapaklari-gul-300x300.jpg" alt="Hikaye 5" class="story-pic">
+        <p class="text-center">Hikaye 5</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Posts -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="post">
+          <div class="post-header d-flex align-items-center">
+            <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="buaradatolgaben" class="rounded-circle">
+            <span>buaradatolgaben</span>
+            <i class="fas fa-ellipsis-h ml-auto"></i>
+          </div>
+          <img src="https://marketplace.canva.com/EAFHhdpY79w/1/0/1600w/canva-beyaz-minimalist-g%C3%BCnayd%C4%B1n-i%CC%87nstagram-g%C3%B6nderisi-z0XwSEER22s.jpg" alt="Post 1" class="post-image">
+          <div class="post-actions mt-2 d-flex justify-content-between">
+            <div>
+              <i class="far fa-heart fa-lg mx-1"></i>
+              <i class="far fa-comment fa-lg mx-1"></i>
+              <i class="far fa-paper-plane fa-lg mx-1"></i>
+            </div>
+            <i class="far fa-bookmark fa-lg" style="margin-left: 7px;"></i>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header d-flex align-items-center">
+            <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="buaradatolgaben" class="rounded-circle">
+            <span>buaradatolgaben</span>
+            <i class="fas fa-ellipsis-h ml-auto"></i>
+          </div>
+          <img src="https://marketplace.canva.com/EAFby7UEZas/1/0/1600w/canva-sar%C4%B1-basit-k%C4%B1sa-metin-ve-kelime-a%C3%A7%C4%B1klamas%C4%B1-instagram-g%C3%B6nderisi-eQXmHL70xIg.jpg" alt="Post 2" class="post-image">
+          <div class="post-actions mt-2 d-flex justify-content-between">
+            <div>
+              <i class="far fa-heart fa-lg mx-1"></i>
+              <i class="far fa-comment fa-lg mx-1"></i>
+              <i class="far fa-paper-plane fa-lg mx-1"></i>
+            </div>
+            <i class="far fa-bookmark fa-lg" style="margin-left: 7px;"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="col-md-4">
+        <div class="rightpanel stickysidebar">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://i.pinimg.com/474x/87/6e/74/876e7493173c9703a0f0d41a52514bb3.jpg" alt="Tolgahan Akgüç" class="profile-pic rounded-circle">
+            <div>
+              <p class="mb-0">Tolgahan Akgüç</p>
+              <p class="text-muted mb-0">@buaradatolgaben</p>
+            </div>
+          </div>
+          <hr>
+          <h6 class="font-weight-bold">Senin İçin Öneriler</h6>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <img src="https://i.pinimg.com/originals/4b/37/6e/4b376e93c30a5ff83a3043b3479d5f88.jpg" alt="Person 1" class="profile-pic rounded-circle mr-3">
+              <div>
+                <p class="mb-0">Person 1</p>
+                <p class="text-muted mb-0">@person1</p>
+              </div>
+            </div>
+            <p class="follow">Takip Et</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <img src="https://i.pinimg.com/200x150/dd/7f/e6/dd7fe62ee2c21ed65b32f08c57bf7704.jpg" alt="Person 2" class="profile-pic rounded-circle mr-3">
+              <div>
+                <p class="mb-0">Person 2</p>
+                <p class="text-muted mb-0">@person2</p>
+              </div>
+            </div>
+            <p class="follow">Takip Et</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <img src="https://i.pinimg.com/170x/b7/4d/b8/b74db8db4af20d1ad6ac30dd4af827e9.jpg" alt="Person 3" class="profile-pic rounded-circle mr-3">
+              <div>
+                <p class="mb-0">Person 3</p>
+                <p class="text-muted mb-0">@person3</p>
+              </div>
+            </div>
+            <p class="follow">Takip Et</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
