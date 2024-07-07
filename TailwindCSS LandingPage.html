@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailwindCSS Landing Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed w-full z-50">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gray-800">Logo</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="text-gray-800 hover:text-gray-600">Ana Sayfa</a>
+        <a href="#" class="text-gray-800 hover:text-gray-600">Hakkımızda</a>
+        <a href="#" class="text-gray-800 hover:text-gray-600">Hizmetler</a>
+        <a href="#" class="text-gray-800 hover:text-gray-600">İletişim</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-800 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="hidden md:hidden">
+    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Ana Sayfa</a>
+    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Hakkımızda</a>
+    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Hizmetler</a>
+    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">İletişim</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen" style="background-image: url('https://picsum.photos/1920/1080?random=1');">
+    <div class="container mx-auto h-full flex justify-center items-center">
+      <div class="text-center text-white">
+        <h1 class="text-5xl font-bold">Hoş Geldiniz</h1>
+        <p class="mt-4 text-lg">TailwindCSS ile oluşturulmuş muhteşem bir landing page</p>
+        <a href="#" class="mt-8 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Keşfet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-12 bg-gray-200">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Hakkımızda</h2>
+      <p class="mt-4 text-lg text-gray-700">Bizim hikayemiz, vizyonumuz ve değerlerimiz hakkında bilgi edinin.</p>
+      <div class="mt-8 flex flex-wrap justify-center">
+        <div class="w-full md:w-1/3 p-4">
+          <img src="https://picsum.photos/400/300?random=2" alt="About Image" class="rounded shadow">
+          <h3 class="mt-4 text-2xl font-bold">Vizyonumuz</h3>
+          <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <img src="https://picsum.photos/400/300?random=3" alt="About Image" class="rounded shadow">
+          <h3 class="mt-4 text-2xl font-bold">Misyonumuz</h3>
+          <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <img src="https://picsum.photos/400/300?random=4" alt="About Image" class="rounded shadow">
+          <h3 class="mt-4 text-2xl font-bold">Değerlerimiz</h3>
+          <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Hizmetlerimiz</h2>
+      <p class="mt-4 text-lg text-gray-700">Size sunduğumuz hizmetleri keşfedin.</      </p>
+      <div class="mt-8 flex flex-wrap justify-center">
+        <div class="w-full md:w-1/3 p-4">
+          <div class="bg-gray-100 p-6 rounded shadow">
+            <img src="https://picsum.photos/100?random=5" alt="Service Icon" class="mx-auto">
+            <h3 class="mt-4 text-2xl font-bold">Hizmet 1</h3>
+            <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <div class="bg-gray-100 p-6 rounded shadow">
+            <img src="https://picsum.photos/100?random=6" alt="Service Icon" class="mx-auto">
+            <h3 class="mt-4 text-2xl font-bold">Hizmet 2</h3>
+            <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <div class="bg-gray-100 p-6 rounded shadow">
+            <img src="https://picsum.photos/100?random=7" alt="Service Icon" class="mx-auto">
+            <h3 class="mt-4 text-2xl font-bold">Hizmet 3</h3>
+            <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-12 bg-gray-200">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">İletişim</h2>
+      <p class="mt-4 text-lg text-gray-700">Bize ulaşmak için aşağıdaki formu doldurun.</p>
+      <div class="mt-8 max-w-md mx-auto">
+        <form action="#" method="POST">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700">Adınız</label>
+            <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700">E-posta</label>
+            <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700">Mesajınız</label>
+            <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Gönder</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-700">© 2024 Tüm Hakları Saklıdır. | <a href="#" class="text-blue-500 hover:underline">Gizlilik Politikası</a> | <a href="#" class="text-blue-500 hover:underline
