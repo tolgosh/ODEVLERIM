@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Saat ve Karşılama</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+            color: #333;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .clock {
+            font-size: 60px;
+            color: #ff6b6b;
+            letter-spacing: 7px;
+            margin-bottom: 20px;
+        }
+        .greeting {
+            font-size: 50px;
+            color: #4ecdc4;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 30px;
+            color: #8e44ad;
+            text-align: center;
+            margin: 0 100px;
+        }
+        img {
+            margin-top: 20px;
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <img src="https://i.pinimg.com/736x/12/82/1a/12821aef23d6a0615e08d056bf5018e1.jpg" alt="Hoş Geldiniz" class="rounded-full">
+        <div class="greeting">
+            Merhaba, <strong><span id="myName">Ziyaretçi</span></strong>! Hoş geldiniz!
+        </div>
+        <div id="myClock" class="clock"></div>
+        <div class="description">
+            tarihinde <strong>Patika.dev</strong>'nin JavaScript saat ödevi sayfasındasınız. Hadi biraz eğlenelim!
+        </div>
+    </div>
+    
+    <script>
+        function showTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('myClock').textContent = timeString;
+        }
+
+        function setGreeting() {
+            const name = prompt('Lütfen adınızı girin:');
+            if (name) {
+                document.getElementById('myName').textContent = name;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setGreeting();
+            showTime();
+            setInterval(showTime, 1000);
+        });
+    </script>
+</body>
+</html>
