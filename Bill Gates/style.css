@@ -1,0 +1,156 @@
+/* Genel Ayarlar */
+body {
+    background-color: #f0f8ff; /* Hafif mavi arka plan */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); /* Arka plan geçiş efekti */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-image: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%); /* Geçişli header rengi */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Bakiye Gösterimi */
+#remaining-money-container {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Metin gölgesi */
+}
+
+/* Ana İçerik */
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Item Kartları */
+#items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.item-card {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 20px;
+    width: 240px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Kartlara gölge efekti */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animasyonu */
+}
+
+.item-card:hover {
+    transform: translateY(-10px); /* Hover'da yukarı kalkma efekti */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Hover'da gölge artışı */
+}
+
+.item-card img {
+    width: 100%;
+    height: auto;
+    max-width: 160px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Hafif yuvarlatılmış köşeler */
+}
+
+.item-card .price {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Butonlar */
+.item-card .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-card button {
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    transition: background-color 0.3s ease; /* Buton renk geçiş efekti */
+}
+
+.item-card .buy-btn {
+    background-color: #28a745;
+}
+
+.item-card .buy-btn:hover {
+    background-color: #218838; /* Hover'da koyulaşan yeşil */
+}
+
+.item-card .sell-btn {
+    background-color: #dc3545;
+}
+
+.item-card .sell-btn:hover {
+    background-color: #c82333; /* Hover'da koyulaşan kırmızı */
+}
+
+.item-card button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Hafif yukarıdan gölge efekti */
+}
+
+footer h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Satın Alınan Ürünler Listesi */
+#purchased-items-list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #eee;
+}

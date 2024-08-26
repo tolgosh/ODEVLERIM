@@ -1,0 +1,23 @@
+# Dice Game
+
+Bu proje, iki oyuncu (Player 1 ve Computer) arasında oynanan basit bir zar oyunudur. Oyuncular zar atar ve en yüksek zar atan oyuncu kazanır. Oyun sonuçları ekranda gösterilir.
+
+## Kullanım
+
+1. **Player 1**: Kendi adınızı girebilirsiniz. Adınızı girmediğinizde varsayılan olarak "Player 1" gösterilecektir.
+2. **Computer**: Bilgisayar, Player 1'e karşı oynayan otomatik bir oyuncudur.
+3. **Zar Atma**: "🎲 Roll Dice" butonuna tıklayarak zarı atın. Zarlar 3 saniye boyunca dönecek ve ardından kazanan açıklanacaktır.
+
+## Özellikler
+
+- Zarlar rastgele bir şekilde atanır.
+- Zarlar atılırken animasyonlu bir geçiş efekti bulunur.
+- Sonuçlar ekranda anında gösterilir.
+- Player 1 adını değiştirebilir, ancak Computer her zaman bilgisayar olarak kalır.
+
+## Proje Kurulumu
+
+Projeyi çalıştırmak için aşağıdaki adımları takip edin:
+
+1. Proje dosyalarını indirin veya klonlayın.
+2. Proje dosyalarını tarayıcınızda açın. (index.html dosyasını açarak)
