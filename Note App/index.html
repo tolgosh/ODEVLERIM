@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced NotesApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NotesApp</h1>
+        <input type="text" id="search" placeholder="Search...">
+        <div class="note-input">
+            <textarea id="note" placeholder="Enter your note here..."></textarea>
+            <div class="colors">
+                <input type="radio" name="color" value="#f28b82" id="pink">
+                <label for="pink" style="background-color: #f28b82;"></label>
+                <input type="radio" name="color" value="#fbbc04" id="yellow">
+                <label for="yellow" style="background-color: #fbbc04;"></label>
+                <input type="radio" name="color" value="#ccff90" id="green">
+                <label for="green" style="background-color: #ccff90;"></label>
+                <input type="radio" name="color" value="#a7ffeb" id="blue">
+                <label for="blue" style="background-color: #a7ffeb;"></label>
+                <input type="radio" name="color" value="#d7aefb" id="purple">
+                <label for="purple" style="background-color: #d7aefb;"></label>
+            </div>
+            <button id="add-note">ADD</button>
+        </div>
+        <div id="notes-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

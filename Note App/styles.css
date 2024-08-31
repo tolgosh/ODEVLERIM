@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 600px;  /* Container'ı genişlettik */
+    max-width: 100%;
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;  /* Başlık boyutunu büyüttük */
+}
+
+#search {
+    width: 100%;
+    padding: 15px;  /* Search input'unu büyüttük */
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.2em;  /* Font boyutunu büyüttük */
+    transition: border-color 0.3s;
+}
+
+#search:focus {
+    border-color: #4caf50;
+}
+
+.note-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#note {
+    width: 100%;
+    height: 150px;  /* Textarea'yı büyüttük */
+    padding: 15px;  /* Padding'i büyüttük */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.2em;  /* Font boyutunu büyüttük */
+    transition: border-color 0.3s;
+}
+
+#note:focus {
+    border-color: #4caf50;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.colors input {
+    display: none;
+}
+
+.colors label {
+    width: 40px;  /* Renk dairelerini büyüttük */
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.colors label:hover {
+    transform: scale(1.2);
+}
+
+#add-note {
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;  /* Butonu büyüttük ve yuvarlattık */
+    font-size: 1.2em;  /* Font boyutunu büyüttük */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-note:hover {
+    background-color: #45a049;
+}
+
+#notes-container {
+    margin-top: 30px;
+}
+
+.note {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2em;  /* Notların font boyutunu büyüttük */
+}
+
+.note p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.note button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-left: 15px;  /* Butonları biraz genişlettik */
+    transition: color 0.3s;
+}
+
+.note button:hover {
+    color: #ccc;
+}
+
+.note .priority {
+    width: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: background-color 0.3s;
+}
