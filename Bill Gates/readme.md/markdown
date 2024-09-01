@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Spend Bill Gates' Money
 
 This is a simple and fun interactive website where you can simulate spending Bill Gates' fortune. The site lets you buy and sell various luxury items, updating your remaining balance in real-time.
@@ -15,21 +14,3 @@ HTML5: Structuring the content of the website.
 CSS3: Styling, including custom styles and Bootstrap for layout and responsiveness.
 JavaScript: Logic to handle purchases, sales, and balance updates.
 Bootstrap: Responsive layouts and modern UI components.
-=======
-# Spend Bill Gates' Money
-
-This is a simple and fun interactive website where you can simulate spending Bill Gates' fortune. The site lets you buy and sell various luxury items, updating your remaining balance in real-time.
-
-## Features
-
-- Buy and sell from a list of 50 luxury items.
-- Real-time balance updates.
-- Responsive design for both desktop and mobile.
-
-### Technologies Used
-
-HTML5: Structuring the content of the website.
-CSS3: Styling, including custom styles and Bootstrap for layout and responsiveness.
-JavaScript: Logic to handle purchases, sales, and balance updates.
-Bootstrap: Responsive layouts and modern UI components.
->>>>>>> refs/remotes/origin/main

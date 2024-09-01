@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Sitesi</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold text-primary" href="#">Film Sitesi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="favorites.html">Favoriler</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <!-- Film Kartları -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-4 shadow-sm border-0 rounded">
+                    <img src="images/inception.jpg" class="card-img-top rounded-top" alt="Inception">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary font-weight-bold">Inception</h5>
+                        <p class="card-text">Kategori: Aksiyon, Bilim Kurgu</p>
+                        <a href="product.html?film=1" class="btn btn-outline-primary btn-sm">Detayları Gör</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-4 shadow-sm border-0 rounded">
+                    <img src="images/dark_knight.jpg" class="card-img-top rounded-top" alt="The Dark Knight">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary font-weight-bold">The Dark Knight</h5>
+                        <p class="card-text">Kategori: Aksiyon, Gerilim</p>
+                        <a href="product.html?film=2" class="btn btn-outline-primary btn-sm">Detayları Gör</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-4 shadow-sm border-0 rounded">
+                    <img src="images/interstellar.jpg" class="card-img-top rounded-top" alt="Interstellar">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary font-weight-bold">Interstellar</h5>
+                        <p class="card-text">Kategori: Macera, Bilim Kurgu</p>
+                        <a href="product.html?film=3" class="btn btn-outline-primary btn-sm">Detayları Gör</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
