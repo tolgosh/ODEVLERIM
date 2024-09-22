@@ -1,0 +1,36 @@
+# Hafıza Oyunu
+
+Bu proje, basit ama eğlenceli bir **Hafıza Oyunu** sunar. Oyun, HTML, CSS ve JavaScript kullanılarak geliştirilmiştir. Oyunda 5x5 matris üzerinde dağıtılmış kartlar vardır ve her kartın arkasında bir resim bulunur. Amaç, aynı resimleri eşleştirerek tüm kartları açmaktır.
+
+## Özellikler
+
+- **Rastgele Kart Dağılımı**: Kartlar oyun başında rastgele karıştırılır.
+- **Eşleşme ve Puanlama**: Aynı resimleri eşleştiren oyunculara 50 puan eklenir, yanlış eşleştirmede ise 10 puan eksiltilir.
+- **Resimlerle Kartlar**: Her kartın arkasında benzersiz bir resim bulunur. Kartlar açıldığında bu resimler görüntülenir.
+- **Yeniden Oyna**: Tüm kartlar eşleştirildiğinde oyun sonlanır ve "Yeniden Oyna" butonu görünür. Bu butona tıklayarak oyun yeniden başlatılabilir.
+
+## Kullanılan Teknolojiler
+
+- **HTML**: Oyunun yapısını oluşturmak için kullanıldı.
+- **CSS**: Kartların stilini ve animasyonlarını düzenlemek için kullanıldı.
+- **JavaScript**: Oyun mantığı, kart eşleştirme, puanlama ve yeniden başlatma işlevleri için kullanıldı.
+
+## Kurulum ve Kullanım
+
+Bu projeyi kendi bilgisayarınızda çalıştırmak için şu adımları izleyin:
+
+1. **Proje Dosyalarını İndirin**: Proje dosyalarını GitHub'dan veya başka bir kaynaktan bilgisayarınıza indirin.
+
+2. **Dosya Yapısı**:
+    - `index.html`: Ana HTML dosyası.
+    - `style.css`: CSS dosyası, stil ve tasarımlar burada bulunur.
+    - `script.js`: JavaScript dosyası, oyun mantığı burada bulunur.
+
+3. **Projeyi Çalıştırma**:
+    - `index.html` dosyasını bir tarayıcıda açarak oyunu başlatabilirsiniz.
+
+## Oynanış
+
+1. **Oyun Başlangıcı**: Oyun başladığında tüm kartlar kapalıdır. Kartları açmak için üzerine tıklayın.
+2. **Kart Eşleştirme**: Aynı resimleri eşleştirin. Doğru eşleştirmede puan kazanırsınız, yanlış eşleştirmede ise puan kaybedersiniz.
+3. **Yeniden Başlatma**: Tüm kartlar açıldığında "Yeniden Oyna" butonu görünür. Bu butona tıklayarak oyunu yeniden başlatabilirsiniz.
